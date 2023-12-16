@@ -1,0 +1,194 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en"  xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--&lt;!&ndash;<link rel="stylesheet" type="text/css" href="styles.css">&ndash;&gt;-->
+<!--<style>-->
+<!--    /* Global styles */-->
+<!--    body {-->
+<!--        font-family: Arial, sans-serif;-->
+<!--        background-color: #a5ecf8;-->
+<!--       /* background-image: url("/image/11.jpg") ;*/-->
+<!--        margin: 0;-->
+<!--        padding: 20px;-->
+<!--    }-->
+
+<!--    /* Form styles */-->
+<!--    form {-->
+<!--        background-color: #fff;-->
+<!--        padding: 20px;-->
+<!--        border-radius: 5px;-->
+<!--        margin-bottom: 20px;-->
+<!--        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);-->
+<!--    }-->
+
+<!--    input[type="text"],-->
+<!--    textarea,-->
+<!--    select,-->
+<!--    input[type="number"],-->
+<!--    button {-->
+<!--        width: 100%;-->
+<!--        padding: 10px;-->
+<!--        margin-bottom: 10px;-->
+<!--        border-radius: 5px;-->
+<!--        border: 1px solid #ccc;-->
+<!--    }-->
+
+<!--    input[type="text"]:focus,-->
+<!--    textarea:focus,-->
+<!--    select:focus,-->
+<!--    input[type="number"]:focus {-->
+<!--        outline: none;-->
+<!--        border-color: #999;-->
+<!--        box-shadow: 0 0 5px rgba(153, 153, 153, 0.5);-->
+<!--    }-->
+
+<!--    button {-->
+<!--        background-color: #4CAF50; /* Green color */-->
+<!--        color: #fff;-->
+<!--        border: none;-->
+<!--        cursor: pointer;-->
+<!--    }-->
+
+<!--    button:hover {-->
+<!--        background-color: #45a049; /* Darker green color */-->
+<!--    }-->
+
+<!--    /* Table styles */-->
+<!--    table {-->
+<!--        width: 100%;-->
+<!--        border-collapse: collapse;-->
+<!--        margin-bottom: 20px;-->
+<!--    }-->
+
+<!--    th, td {-->
+<!--        border: 1px solid #ddd;-->
+<!--        padding: 8px;-->
+<!--        text-align: left;-->
+<!--    }-->
+
+<!--    th {-->
+<!--        background-color: #fff; /* White color */-->
+<!--        color: #333;-->
+<!--    }-->
+
+<!--    tbody tr:nth-child(even) {-->
+<!--        background-color: #f9f9f9;-->
+<!--    }-->
+
+<!--    a {-->
+<!--        text-decoration: none;-->
+<!--        color: #4CAF50; /* Green color */-->
+<!--    }-->
+
+<!--    a:hover {-->
+<!--        color: #45a049; /* Darker green color */-->
+<!--    }-->
+
+<!--</style>-->
+<!--<body>-->
+<!--This is the page where you can login <br>-->
+<!--<a th:href="@{/login}">Click to login</a><br>-->
+<!--<a th:href="@{/register}">Click here to sign up</a>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a.active {
+        font-weight: bold;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .slide img {
+        width: 100%;
+    }
+
+    /* Add animation to slideshow */
+    .slide {
+        animation: slide 5s infinite;
+    }
+
+    @keyframes slide {
+        0% { opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+</style>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+        </div>
+    </div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>

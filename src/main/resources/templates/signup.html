@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<th:block th:include="navbar"></th:block>
+<h1>Users</h1>
+  <form th:action="@{/new}" th:object="${userInfo}" method="post">
+      <input type="text" th:field="*{name}" placeholder="name">
+      <input type="email" th:field="*{email}" placeholder="email">
+      <input type="text" th:field="*{password}" placeholder="password">
+      <select th:field="*{role}">
+          <option value="ADMIN">ADMIN</option>
+          <option value="USER">USER</option>
+      </select>
+      <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
